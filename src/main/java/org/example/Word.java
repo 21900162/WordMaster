@@ -10,6 +10,16 @@ public class Word {
     public Word() {
     }
 
+    @Override
+    public String toString() {
+        String slevel = "";
+        for(int i=0; i<level; i++){
+            slevel+="*";
+        }
+        String str = String.format("%-3s",slevel) + String.format("%15s",word)+ "  "+ meaning;//왼쪽 정렬
+        return str;
+    }
+
     public Word(int id, int level, String word, String meaning) {
         this.id = id;
         this.level = level;
