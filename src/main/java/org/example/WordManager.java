@@ -23,6 +23,9 @@ public class WordManager {
             else if(menu == 4){
                 wordCRUD.addWord();
             }
+            else if(menu == 5){
+                wordCRUD.update();
+            }
         }
 
 
